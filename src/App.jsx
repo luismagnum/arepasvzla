@@ -1,8 +1,13 @@
 import './App.css'
+import Nav from './components/Nav'
+import Hed from './components/Hed'
+import Info from './components/Info'
 function App() {
   return (
       <div>
-       <h1>Hola luis proyecto Vite</h1>
+       <Nav />
+       <Hed />
+       <Info />
     </div>
   )
 }
