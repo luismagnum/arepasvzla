@@ -1,27 +1,27 @@
 import React from 'react'
-import arepa from '../image/arepas01.png'
+import arepa from '../image/arepau.png'
 
 const Info = () => {
   return (
-    <div>
-      <section class="container">
-        <div class="container-box">
+    <>
+      <div className="container" id='Seccion1'>
+        <div className="container-box">
             <img src={arepa} alt=""/>
-            <h3>11:00 - 11:00pm</h3>
-            <a href="#">Horario de trabajo</a>
+            <h3>Arepas</h3>
+            <a href="#">Carne c/queso</a>
         </div>
-        <div class="container-box">
+        <div className="container-box">
             <img src={arepa} alt=""/>
-            <h3>Villa Regina</h3>
-            <a href="#">Direccion</a>
+            <h3>Arepas</h3>
+            <a href="#">Pollo c/queso</a>
         </div>
-        <div class="container-box">
+        <div className="container-box">
             <img src={arepa} alt=""/>
-            <h3>yasminlinares</h3>
-            <a href="#">Email</a>
+            <h3>Arepas</h3>
+            <a href="#">Reina pepiada</a>
         </div>
-    </section>
     </div>
+  </>
   )
 }
 

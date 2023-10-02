@@ -18,7 +18,7 @@
     --second-color:#9e9e9e;
     --bg-color:#111;
 
-    --big-font: 3.5rem;
+    --big-font: 3.8rem;
     --h2-font: 2.6rem;
     --p-font:1.1rem;
 }
@@ -29,7 +29,7 @@ body{
 }
 
 header{
-   position: fixed; 
+   position: fixed;
    width: 100%;
    top: 0;
    right: 0;
@@ -38,7 +38,7 @@ header{
    align-items: center;
    justify-content: space-between;
    background: transparent;
-   padding: 30px 14%;
+   padding: 15px 10%;
    transition: all 0.5 ease;
 }
 
@@ -99,37 +99,36 @@ h2{
     display: none;
 }
 
-section{
-    padding: 100px 14% 60px;
-    margin-top: 70px;
-}
+
 
 .home{
     position: relative;
+    padding: 100px;
     height: 100vh;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:repeat(2, 1fr);
     align-items: center;
     gap: 2rem;
 }
 
 .home-img img{
-    width: 100%;
+    align-items: center;
+    width: 500px;
     height: auto;
     margin-bottom: 10rem;
 }
 
 .home-text h1{
     font-size: var(--big-font);
-    font-weight: 500;
+    font-weight: bold;
     line-height: 1.3;
     margin-bottom: 1rem;
 }
 
 .home-text h2{
     font-size: var(--big-font);
-    font-weight: 500;
+    font-weight: bold;
     line-height: 1.3;
     margin-bottom: 1rem;
 }
@@ -137,15 +136,16 @@ section{
 .home-text h3{
     font-size: var(--big-font);
     color: var(--text-color);
-    font-weight: 500;
+    font-weight: bold;
     line-height: 1.3;
-    margin-bottom: 8rem;
+    margin-bottom: 10rem;
 }
 
 
 
 span{
     font-size: 25px;
+    font-weight: bold;
     color: var(--main-color);
 }
 
@@ -194,23 +194,29 @@ header.sticky{
 }
 
 .container{
-    padding: 30px 14% 70px;
+    padding: 50px 8% 70px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fit,minmax(300px, auto));
     gap: 2rem;
     text-align: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    
+   
 }
 
 .container-box{
-    padding: 43px;
+    padding: 50px 80px;
     background: var(--other-color);
     border-radius: 3rem;
+    margin-top: 30px;
 }
 
 .container-box img{
     width: 100%;
-    max-width: 50px;
+    max-width: 80px;
     height: auto;
+    margin-left: 30px;
 }
 
 .container-box h3{
@@ -220,7 +226,7 @@ header.sticky{
 }
 
 .container-box a{
-    color: var(--second-color);
+    color: var(--main-color);
     font-size: var(--p-font);
     letter-spacing: 1px;
     transition: all 0.5s ease;
@@ -228,4 +234,37 @@ header.sticky{
 
 .container-box a:hover{
     color: var(--main-color);
+}
+
+.about{
+    display: flex;
+    padding: 70px 0px 70px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
+}
+
+.about-img{
+    width: 100%;
+    height: auto;
+}
+
+.about-img img{
+    width: 450px;
+    margin-left: 60px;
+    vertical-align: middle;
+}
+
+.about-text h2{
+    font-size: var(--big-font);
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.about-text p{
+    color: var(--second-color);
+    margin-right: 70px;
+    font-size: var(--p-font);
+    line-height: 1.5;
+    margin-bottom: 3rem;
 }
