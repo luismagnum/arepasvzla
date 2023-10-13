@@ -1,24 +1,24 @@
 import React from 'react'
-import arepa from '../image/arepau.png'
+import icon from '../image/sabor.ico'
 
 const Info = () => {
   return (
     <>
       <div className="container" id='Seccion1'>
         <div className="container-box">
-            <img src={arepa} alt=""/>
-            <h3>Arepas</h3>
-            <a href="#">Carne c/queso</a>
+            <img src={icon} alt=""/>
+            <h3>Empanadas</h3>
+            <a href="#">Carne y pollo</a>
         </div>
         <div className="container-box">
-            <img src={arepa} alt=""/>
-            <h3>Arepas</h3>
-            <a href="#">Pollo c/queso</a>
+            <img src={icon} alt=""/>
+            <h3>Tequeños</h3>
+            <a href="#">queso</a>
         </div>
         <div className="container-box">
-            <img src={arepa} alt=""/>
-            <h3>Arepas</h3>
-            <a href="#">Reina pepiada</a>
+            <img src={icon} alt=""/>
+            <h3>Torta 3 leches</h3>
+            <a href="#">Rico postre</a>
         </div>
     </div>
   </>
