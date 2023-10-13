@@ -16,10 +16,6 @@ const Hed = () => {
             <img src={arepa} alt=""/>
         </div>
       </div>
-        <div className='boton'>
-        <a href="#" className="btn">Explore Menu <i class="bi bi-play-fill"></i></a>
-            <a href="#" className="btn2">Quiero Encargar</a>
-        </div>
     </>
   )
 }

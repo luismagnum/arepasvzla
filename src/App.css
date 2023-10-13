@@ -28,7 +28,7 @@ body{
     color: var(--text-color);
 }
 
-header{
+/*header{
    position: fixed;
    width: 100%;
    top: 0;
@@ -97,11 +97,11 @@ h2{
     cursor: pointer;
     z-index: 100001;
     display: none;
-}
+}*/
 
 .home{
     position: relative;
-    margin-top: 5px;
+    margin-top: 10px;
     padding: 100px;
     height: 100vh;
     width: 100%;
@@ -127,6 +127,7 @@ h2{
 
 .home-text h2{
     font-size: var(--big-font);
+    color: var(--main-color);
     font-weight: bold;
     line-height: 1.3;
     margin-bottom: 1rem;
@@ -150,7 +151,7 @@ span{
 
 .btn{
     display: inline-block;
-    margin-left: 90px;
+    margin-left: 150px;
     padding: 15px 35px;
     background: var(--other-color);
     color: var(--main-color);
@@ -175,7 +176,7 @@ span{
 
 .btn2{
     display: inline-block;
-    margin-left: 100px;
+    margin-left: 150px;
     font-size: var(--p-font);
     font-weight: 500;
     letter-spacing: 1px;
@@ -198,10 +199,10 @@ header.sticky{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px, auto));
     gap: 1rem;
-    margin-left:30px;
+    margin-left:40px;
     text-align: center;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: -3rem;
     
    
 }
@@ -256,6 +257,7 @@ header.sticky{
 
 .about-text h2{
     font-size: var(--big-font);
+    color: var(--main-color);
     font-weight: bold;
     line-height: 1;
     margin-bottom: 1rem;
@@ -270,7 +272,7 @@ header.sticky{
 }
 
 .shop{
-    margin-top: 0px;
+    margin-top: 8px;
 }
 
 .middle-text{
@@ -370,7 +372,7 @@ header.sticky{
 
 .row-btn{
     text-align: center;
-    margin-right: 80px;
+    margin-right: 130px;
     margin-bottom: 6rem;
 }
 
@@ -530,20 +532,28 @@ header.sticky{
         margin-bottom: 5px;
     }
 
-    .home-text h1 h2 h3{
+    .home-text h1 h3{
         margin-top: -1px;
         font-size: 40px;
         line-height: 50px;
     }
 
+    .home-text h2{
+        text-align: center;
+        left: -2px;
+        font-size: 50px;
+    }
+
     .home-img{
+        padding: 20px;
         width: 100%;
         text-align: center;
     }
 
     .home-img img{
        display: flex;
-       width: 300px;
+       width: 200px;
+       display: none;
     }
 
 

@@ -4,6 +4,10 @@ import icon from '../image/sabor.ico'
 const Info = () => {
   return (
     <>
+     <div className="middle-text">
+            <h4>Nuestros</h4>
+            <h2>Productos</h2>
+        </div>
       <div className="container" id='Seccion1'>
         <div className="container-box">
             <img src={icon} alt=""/>

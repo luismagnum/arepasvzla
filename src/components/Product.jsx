@@ -6,8 +6,8 @@ const Product = () => {
     <>
       <div className="shop" id="shop">
         <div className="middle-text">
-            <h4>Nuestra tienda</h4>
-            <h2>Productos</h2>
+            <h4>Nuestros</h4>
+            <h2>Combos</h2>
         </div>
         <div className="shop-content">
             <div className="row">
