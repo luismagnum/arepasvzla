@@ -583,14 +583,13 @@ header.sticky{
         top: 100%;
     }
 }
-@media (max-width:1045px){
+@media (max-width:991px){
     :root{
         --big-font:3.3rem;
         --h2-font: 2rem;
     }
     .home-img img{
         width: 100%;
-        margin-left: 20px;
         max-width: 400px;
         height: auto;
         margin-top: -150px;
@@ -619,7 +618,7 @@ header.sticky{
     }
     .home-text{
         margin-top: -3rem;
-        margin-left: -15px;
+        margin-left: 5px;
     }
     .home-img{
         text-align: center;
@@ -638,7 +637,7 @@ header.sticky{
         font-size: 1.9rem ;
     }
 }
-@media (max-width:520px){
+@media (max-width:465px){
     .social i{
         margin: 0 10px;
     }
