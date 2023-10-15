@@ -101,7 +101,6 @@ h2{
 
 .home{
     position: relative;
-    margin-top: 10px;
     padding: 100px;
     height: 100vh;
     width: 100%;
@@ -109,6 +108,10 @@ h2{
     grid-template-columns: repeat(auto-fit,minmax(250px, auto));
     align-items: center;
     gap: 2rem;
+}
+
+.home-text{
+    margin-top: -3rem;
 }
 
 .home-img img{
@@ -122,6 +125,7 @@ h2{
     font-size: var(--big-font);
     font-weight: bold;
     line-height: 1.3;
+    margin-top: 0.5px;
     margin-bottom: 1rem;
 }
 
@@ -241,7 +245,7 @@ header.sticky{
 .about{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px, auto));
-    gap: 10rem;
+    gap: 5rem;
 }
 
 .about-img{
@@ -250,7 +254,8 @@ header.sticky{
 }
 
 .about-img img{
-    width: 300px;
+    width: 350px;
+    margin-top: 20px;
     margin-left: 80px;
     vertical-align: middle;
 }
@@ -259,13 +264,14 @@ header.sticky{
     font-size: var(--big-font);
     color: var(--main-color);
     font-weight: bold;
-    line-height: 1;
+    line-height: 0.9;
+    margin-left: 10px;
     margin-bottom: 1rem;
 }
 
 .about-text p{
     color: var(--second-color);
-    margin: 10px;
+    margin: 15px 20px;
     font-size: var(--p-font);
     line-height: 1.5;
     margin-bottom: 3rem;
@@ -525,36 +531,134 @@ header.sticky{
     margin-right: 5px;
 }
 
-@media(max-width:991px){
-    .home-text{
-        width: 100%;
-        text-align: center;
-        margin-bottom: 5px;
+@media (max-width:1545px){
+    header{
+        padding: 22px 4%;
+        transition: .2s;
     }
-
-    .home-text h1 h3{
-        margin-top: -1px;
-        font-size: 40px;
-        line-height: 50px;
+    header.sticky{
+        padding: 14px 4%;
+        transition: .2s;
     }
-
-    .home-text h2{
-        text-align: center;
-        left: -2px;
-        font-size: 50px;
+    section{
+        padding: 50px 4% 40px;
+        transition: .2s;
     }
-
-    .home-img{
-        padding: 20px;
-        width: 100%;
-        text-align: center;
+    .container{
+        padding: 30px 10% 50px;
     }
-
+}
+@media (max-width:1180px){
+    :root{
+        --big-font:4rem;
+        --h2-font:2.2rem;
+        --p-font:15px
+    }
+    .home{
+        height: 85vh;
+    }
+}
+@media (max-width:1076px){
+    .menu-icon{
+        display: initial;
+    }
+    .navlist{
+        position: absolute;
+        top: -1000px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        background: var(--other-color);
+        transition: all 0.5s ease;
+    }
+    .navlist a{
+        display: block;
+        padding: 0.5rem;
+        margin: 1rem;
+        border-left: 2px solid var(--main-color);
+    }
+    .navlist.open{
+        top: 100%;
+    }
+}
+@media (max-width:1045px){
+    :root{
+        --big-font:3.3rem;
+        --h2-font: 2rem;
+    }
     .home-img img{
-       display: flex;
-       width: 200px;
-       display: none;
+        width: 100%;
+        margin-left: 20px;
+        max-width: 400px;
+        height: auto;
+        margin-top: -150px;
+    }
+    .about-img img{
+        width: 100%;
+        margin-left: 100px;
+        max-width: 300px;
+        height: auto;
+    }
+    .home-img img{
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    .home{
+        height: 70vh;
+    }
+}
+@media (max-width:860px){
+    .home{
+        grid-template-columns: 1fr;
+        height: 118vh;
+    }
+    .home-text{
+        padding-top: 30px;
+    }
+    .home-text{
+        margin-top: -3rem;
+        margin-left: -15px;
+    }
+    .home-img{
+        text-align: center;
+    }
+    .about{
+        grid-template-columns: 1fr;
+    }
+    .about-img{
+        text-align: center;
+    }
+    .about-img img{
+        width: 280px;
+    }
+    .about-text h2{
+        margin-left: 120px;
+        font-size: 1.9rem ;
+    }
+}
+@media (max-width:520px){
+    .social i{
+        margin: 0 10px;
+    }
+    .contact-text p{
+        max-width: 100%;
+    }
+    .details{
+        gap: 1.5rem;
     }
 
-
+}
+@media (max-width:465px){
+    :root{
+        --big-font:2.8rem;
+        --h2-font:2rem;
+    }
+}
+@media (max-width:440px){
+    .home{
+        height: 110vh;
+        gap: 0.1rem;
+    }
 }
