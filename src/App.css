@@ -532,7 +532,7 @@ header.sticky{
 }
 
 @media (max-width:1545px){
-    header{
+    /*header{
         padding: 22px 4%;
         transition: .2s;
     }
@@ -543,7 +543,7 @@ header.sticky{
     section{
         padding: 50px 4% 40px;
         transition: .2s;
-    }
+    }*/
     .container{
         padding: 30px 10% 50px;
     }
@@ -558,7 +558,7 @@ header.sticky{
         height: 85vh;
     }
 }
-@media (max-width:1076px){
+/*@media (max-width:1076px){
     .menu-icon{
         display: initial;
     }
@@ -570,7 +570,7 @@ header.sticky{
         display: flex;
         flex-direction: column;
         text-align: left;
-        background: var(--other-color);
+        background:#fff;
         transition: all 0.5s ease;
     }
     .navlist a{
@@ -582,7 +582,7 @@ header.sticky{
     .navlist.open{
         top: 100%;
     }
-}
+}*/
 @media (max-width:991px){
     :root{
         --big-font:3.3rem;

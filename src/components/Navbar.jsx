@@ -6,9 +6,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div>
       <div className='Navbar'>
-      <img className ='w-14 ml-5' src={img} alt=''/>
+      <img className ='w-16 ml-12' src={img} alt=''/>
       <span className='nav-logo'>Sabores de Venezuela</span>
       <div className={`nav-items ${isOpen && "open"}`}>
         <a href='/home'>Home</a>
@@ -22,7 +21,6 @@ const Navbar = () => {
         <div className='bar'></div>
       </div>
       </div>
-    </div>
   )
 }
 
